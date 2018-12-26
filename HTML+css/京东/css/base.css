@@ -1,0 +1,52 @@
+/*用于存放公共样式*/
+/*版心*/
+* {
+	margin: 0;
+	padding: 0;
+}
+img {
+	border: 0;
+	vertical-align: middle;/*防止图片和文字基线对齐，底部出现间隙*/
+}
+.w {
+	width: 1190px;
+	margin: 0 auto;
+}
+.fr {
+	float: right;
+}
+.fl {
+	float: left;
+}
+li {
+	list-style: none;
+}
+em,i {
+	font-style: normal;
+}
+a {
+	text-decoration: none;
+}
+.style-red {
+	color: #f10215!important;
+}
+.clearfix:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {
+	*zoom: 1;/*IE6，7专用,其他浏览器跳过*/
+}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?92zr41');
+  src:  url('../fonts/icomoon.eot?92zr41#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?92zr41') format('truetype'),
+    url('../fonts/icomoon.woff?92zr41') format('woff'),
+    url('../fonts/icomoon.svg?92zr41#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

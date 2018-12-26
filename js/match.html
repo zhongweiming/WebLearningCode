@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+	var text="cat,bat,sat,fat"; 
+	var pattern=/.at/g;//加一个g，全局，可以匹配所有满足条件的
+	var matches=text.match(pattern);
+	alert(matches.index);
+	alert(matches[2]);
+	alert(pattern.lastIndex);
+</script>
+</body>
+</html>

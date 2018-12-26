@@ -1,0 +1,239 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+/*清除浮动*/
+.clearfix:before,.clearfix:after {
+			content: "";
+			display: table;
+		}
+.clearfix:after {
+			clear: both;
+		}
+.clearfix {
+			*zoom: 1;/*IE6，7专用,其他浏览器跳过*/
+		}
+body{
+	background-color: #fafafa;
+}
+.header{
+	height: 100px;
+	background-color: #fff;
+}
+.header .header-content{
+	width: 1240px;
+	height: 100px;
+	
+}
+.header .header-content a{
+	float: left;
+	height: 100px;
+
+}
+.nav{
+	height: 100px;
+	float: right;
+	line-height: 100px;
+	list-style: none;
+}
+.nav li{
+	float: left;
+	font-size: 14px;
+	color: #333;
+	margin: 0 20px;
+}
+.nav li a{
+	text-decoration: none;
+}
+.nav li a:hover{
+	color: #2288f6;
+}
+.banner{
+	height: 620px;
+	background: url("../images/banner.jpg") no-repeat center top;
+}
+.service,.example,.hezuo{
+	width: 1050px;
+	margin-top: 75px;
+	background-color: #fafafa;
+}
+.head-title{
+	border-top: 1px solid #ccc;
+	margin: 0 25px 0;
+}
+.head-title h4{
+	margin: -15px auto 0;
+	width: 166px;
+}
+.service  p{
+	font-size: 12px;
+	color: #666;
+	width: 739px;
+	text-align: center;
+	line-height: 24px;
+	margin-top: 24px;
+}
+.service-content{
+	width: 1050px;
+	margin-top: 45px;
+
+}
+.service-content li{
+	list-style: none;
+	width: 320px;
+	height: 510px;
+	float: left;
+	background-color: #fff;
+}
+.service-content li.yingxiao {
+	margin: 0 45px;
+}
+.service-content li img{
+	width: 248px;
+	height: 132px;
+	margin: 40px 35px 45px 35px;
+}
+.service-content li h4{
+	font-weight: normal;
+	font-size: 18px;
+	height: 40px;
+	text-align: center;
+	margin: 0 auto;
+}
+.service-content li p{
+	font-size: 12px;
+	width: 235px;
+	line-height: 26px;
+	color: #666;
+	margin: 0 auto;
+	height: 130px;/*给一个高为了防止文本不同影响实际高度*/
+}
+.service-content li a{
+	text-decoration: none;
+	display: block;
+	width: 148px;
+	height: 38px;
+	border: 1px solid #ff9412;
+	color: #ff9412;
+	margin: 30px auto 0;
+	line-height: 38px;
+	text-align: center;
+	font-size: 12px;
+	border-radius: 5px;
+
+}
+.service-content li a:hover{
+	color: #fff;
+	background-color: #ff9412;
+}
+.example-content {
+	margin-top: 50px;
+	position: relative;
+}
+.example-content li{
+	float: left;
+	width: 324px;
+	height: 211px;
+	position: relative;
+}
+.example-content li img{
+	width: 324px;
+	height: 211px;
+}
+.example-text{
+	height: 46px;
+	width: 100%;
+	font-size: 12px;
+	color: #fff;
+	position: absolute;
+	background-color: rgba(0,0,0,0.4);
+	text-align: center;
+	line-height: 46px;
+	bottom: 0;
+	left: 0;
+}
+.example-middle {
+	margin: 0 39px;
+}
+.example-search {
+	width: 100%;
+	height: 100%;
+	background: url(../images/fdj.png) no-repeat center;
+	background-color: rgba(0,0,0,0.4);
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.example-content li:hover .example-search{
+	display: block;
+}
+.example-left,.example-right {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	background-color: #e6e6e6;
+	color: #fff;
+	border-radius: 50%;
+	line-height: 60px;
+	text-align: center;
+	font-size: 35px;
+	top: 50%;
+	margin-top: -30px;
+}
+.example-left {
+	left: -92px;
+}
+.example-right {
+	right: -92px;
+}
+.example-left:hover,.example-right:hover {
+	background-color: #57a9ef;
+} 
+.hezuo-content {
+	margin-top: 55px;
+	width: 1049px;
+	height: 241px;
+	overflow: hidden;/*让爷爷的大小变小设置超出部分隐藏则可以使得上右边框消失*/
+}
+.hezuo-content ul{
+	width: 1060px;
+	height: 244px;/*父亲则需要大于等于孩子，必须能包住不然孩子会掉下来*/
+}
+.hezuo-content li{
+	width: 209px;
+	height: 60px;
+	float: left;
+	border-right: 1px dashed #ccc;
+	border-bottom: 1px dashed #ccc;
+	text-align: center;
+	padding-top: 20px;
+}
+.footer{
+	height: 165px;
+	background-color: #212425;
+	margin-top: 150px;
+	overflow: hidden;/*让其不会被子节点拉下来*/
+}
+.sub-footer {
+	text-align: center;
+	margin-top: 50px;
+	color: #f0f1f1;
+}
+.footer a{
+	color: #f0f1f1;
+	text-decoration: none;
+	margin: 0 5px;
+}
+.footer a:hover{
+	color: #215b9e;
+	text-decoration: underline;
+}
+.footer p {
+	color: #888888;
+	text-align: center;
+	margin-top: 30px;
+}

@@ -1,0 +1,10 @@
+h3{
+	font-weight: normal;
+	background-color: #blue;
+	height: 50px;
+	line-height: 40px;
+}
+span{
+	color: red;
+	font-weight: bold;
+}
